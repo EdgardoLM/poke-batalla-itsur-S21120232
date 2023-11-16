@@ -15,6 +15,12 @@ import mx.edu.itsur.pokebatalla.model.moves.OndaIgnea;
  */
 public class Beedrill extends Pokemon{
     
+    @Override
+    public Enum[] getMovimientos() {
+    return Beedrill.Movimientos.values();
+		}
+    
+    
     public enum Movimientos {
         RELEVO,
         HIPERRAYO,
@@ -36,8 +42,11 @@ public class Beedrill extends Pokemon{
         this.nombre = nombre;
     }
      
-      public void atacar(Pokemon oponente, Beedrill.Movimientos movimientoAUtilizar) {
+    @Override
+    public void atacar(Pokemon oponente, int ordinalMovimiento) {
 
+        Beedrill.Movimientos movimientoAUtilizar =
+                Beedrill.Movimientos.values()[ordinalMovimiento];
         //Instanciar el movimiento solicitado
         Movimiento instanciaMovimiento;        
         switch (movimientoAUtilizar) {

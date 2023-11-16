@@ -14,6 +14,11 @@ import mx.edu.itsur.pokebatalla.model.moves.PoderPasado;
  * @author Edgardo Lopez Mendez 
  */
 public class Kabuto extends Pokemon{
+ 
+ @Override
+    public Enum[] getMovimientos() {
+    return Kabuto.Movimientos.values();
+		}
     
     public enum Movimientos {
         AZOTE,
@@ -30,8 +35,12 @@ public class Kabuto extends Pokemon{
         precision = 3;
     }
     
- public void atacar(Pokemon oponente, Kabuto.Movimientos movimientoAUtilizar) {
+ @Override
+    public void atacar(Pokemon oponente, int ordinalMovimiento) {
 
+        Kabuto.Movimientos movimientoAUtilizar =
+                Kabuto.Movimientos.values()[ordinalMovimiento];
+        
         //Instanciar el movimiento solicitado
         Movimiento instanciaMovimiento;        
         switch (movimientoAUtilizar) {
@@ -52,5 +61,5 @@ public class Kabuto extends Pokemon{
 
         //Aplicar el movimiento.
         instanciaMovimiento.utilizar(this, oponente);
-    }
+}
 }

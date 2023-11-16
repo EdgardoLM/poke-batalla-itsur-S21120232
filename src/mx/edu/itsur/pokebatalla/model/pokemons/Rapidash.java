@@ -16,6 +16,11 @@ import mx.edu.itsur.pokebatalla.model.moves.Movimiento;
  */
 public class Rapidash extends Pokemon{
     
+    @Override
+    public Enum[] getMovimientos() {
+    return Rapidash.Movimientos.values();
+		}
+    
     public enum Movimientos {
         CONTONEO,
         BOTE,
@@ -36,8 +41,12 @@ public class Rapidash extends Pokemon{
         this.nombre = nombre;
     }
       
- public void atacar(Pokemon oponente, Rapidash.Movimientos movimientoAUtilizar) {
+@Override
+    public void atacar(Pokemon oponente, int ordinalMovimiento) {
 
+        Rapidash.Movimientos movimientoAUtilizar =
+        Rapidash.Movimientos.values()[ordinalMovimiento];
+        
         //Instanciar el movimiento solicitado
         Movimiento instanciaMovimiento;        
         switch (movimientoAUtilizar) {

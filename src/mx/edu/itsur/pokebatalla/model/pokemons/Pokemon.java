@@ -11,7 +11,7 @@ import mx.edu.itsur.pokebatalla.model.moves.Movimiento;
  *
  * @author FJML1983
  */
-public class Pokemon {
+public abstract class Pokemon {
 
     //Atributos
     protected String tipo;
@@ -21,7 +21,8 @@ public class Pokemon {
     protected int ataque;
     protected int defensa;
     protected double precision;
-
+    protected int xp; //https://www.wikidex.net/wiki/Experiencia_base
+    
     Pokemon() {
     }
 
@@ -35,6 +36,10 @@ public class Pokemon {
     public int getDefensa(){
         return defensa;
     }
+
+    public int getHp() {
+        return hp;
+    }       
     
     //Setters
     public void setNombre(String nombre) {
@@ -46,7 +51,11 @@ public class Pokemon {
         this.hp = this.hp - danio;
     }        
     
+    public abstract void atacar(Pokemon oponente, int ordinalMovimiento );
 
+    //Devolver la lista de movimientos disponibles del pokemon.
+    public abstract Enum[] getMovimientos();
+    
     @Override
     public String toString() {
 
