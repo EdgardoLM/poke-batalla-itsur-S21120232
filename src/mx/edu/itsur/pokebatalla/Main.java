@@ -4,8 +4,8 @@
  */
 package mx.edu.itsur.pokebatalla;
 
-import mx.edu.itsur.pokebatalla.battles.Batalla;
-import mx.edu.itsur.pokebatalla.battles.Entrenador;
+import mx.edu.itsur.pokebatalla.model.battles.Batalla;
+import mx.edu.itsur.pokebatalla.model.battles.Entrenador;
 import mx.edu.itsur.pokebatalla.model.pokemons.Beedrill;
 import mx.edu.itsur.pokebatalla.model.pokemons.Bullbasaur;
 import mx.edu.itsur.pokebatalla.model.pokemons.Pikachu;
