@@ -12,6 +12,7 @@ import mx.edu.itsur.pokebatalla.model.pokemons.Pikachu;
 import mx.edu.itsur.pokebatalla.model.pokemons.Charmander;
 import mx.edu.itsur.pokebatalla.model.pokemons.Kabuto;
 import mx.edu.itsur.pokebatalla.model.pokemons.Rapidash;
+import mx.edu.itsur.pokebatalla.utils.FileManager;
 
 /**
  *
@@ -36,9 +37,21 @@ public class Main {
         Entrenador ent2 = new Entrenador("Gute");
         ent2.capturarPokemon(Kabu);
         
-      
         Batalla battle = new Batalla(ent1, ent2);
         battle.desarrollarBatalla();
+        
+        //Guardar hacia archivo
+        FileManager.guardarHaciaArchivo(battle);
+       
+        
+        
+        
+        Batalla b1 = FileManager.leerDesdeArchivo();
+        
+        
+      
+       
+        
         
     }
             

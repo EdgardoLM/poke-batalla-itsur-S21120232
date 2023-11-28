@@ -76,8 +76,8 @@ public class Batalla {
             System.out.println(entrenadorEnTurno.getNombre() + " tu Pokemon actual es: " + entrenadorEnTurno.getPokemonActual());
             System.out.println("El Pokemon de tu oponente " + entrenadorOponente.getNombre() + " es: " + entrenadorOponente.getPokemonActual());
             System.out.println("Deseas cambiar de Pokemon?");
-            System.out.println("1 -> NO");
-            System.out.println("2 -> SI");
+            System.out.println("1 --> NO");
+            System.out.println("2 --> SI");
             try {
                 char auxLectura = (char) System.in.read(); 
                 System.in.read(new byte[System.in.available()]); 
