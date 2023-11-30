@@ -41,9 +41,8 @@ import java.util.logging.Logger;
             return (Batalla) lectorDeObjetos.readObject();
         } catch (FileNotFoundException ex){
             System.out.println("No hay batalla guardada");
-        }
-        catch (IOException ex){
-            System.out.println("Error al escribir el objeto en el archivo");
+        } catch (IOException ex){
+            System.out.println(" ");
         } catch (ClassNotFoundException ex){
             Logger.getLogger(FileManager.class.getName()).log(Level.SEVERE, null, ex);
         }

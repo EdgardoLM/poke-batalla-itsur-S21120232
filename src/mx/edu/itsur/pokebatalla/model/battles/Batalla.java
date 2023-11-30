@@ -98,7 +98,7 @@ public class Batalla implements Serializable {
                                 seleccionarPokemon(entrenadorEnTurno);
                         } catch (IndexOutOfBoundsException e) {
                             System.out.println("TUS POKEMONES SON " + entrenador1.getPokemonsCapturados().size()
-                                + " ELIGE A UN POKEMON! \n");
+                                + " ELIGE A UN POKEMON!");
                             System.out.println("--------------------------------------");
                             entrenadorEnTurno.setPokemonActual(null);
                         }
@@ -123,8 +123,7 @@ public class Batalla implements Serializable {
                                 auLectura = (char) System.in.read();
                                 System.in.read(new byte[System.in.available()]);
                                 if (auLectura < '1' || auLectura > '4') {
-                                    throw new IndexOutOfBoundsException("\n        "
-                                            + "ELIGE UNA TECLA DEL 1 AL 3.");
+                                    throw new IndexOutOfBoundsException("ELIGE UNA TECLA DEL 1 AL 3.");
                                 }
                                 entrenadorEnTurno.instruirMovimientoAlPokemonActual(entrenadorOponente.
                                         getPokemonActual(), Character.getNumericValue(auLectura) - 1);
@@ -147,13 +146,13 @@ public class Batalla implements Serializable {
             System.out.println("El Pokemon del entrenador " + entrenadorOponente.getNombre() + " ah perdido!");
             System.out.println("FELICIDADES " + entrenadorEnTurno.getNombre() + ", haz ganado la batalla!");
             System.out.println("-------------------------------------------");
-            System.out.println(entrenadorEnTurno.pokemonActual + "Haz ganado la batalla " + "/n" 
-                    + "!!! FELICIDADES !!!");
+            System.out.println(entrenadorEnTurno.pokemonActual + "Haz ganado la batalla !!! FELICIDADES !!!");
             batallaFinalizada = true;
 
             
             }
-        FileManager.guardarHaciaArchivo(this);
+                    FileManager.guardarHaciaArchivo(this);
+
         }
     }
     
