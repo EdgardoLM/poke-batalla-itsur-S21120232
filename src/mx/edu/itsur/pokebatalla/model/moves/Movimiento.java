@@ -4,6 +4,7 @@
  */
 package mx.edu.itsur.pokebatalla.model.moves;
 
+import java.io.Serializable;
 import mx.edu.itsur.pokebatalla.model.pokemons.Pokemon;
 
 /**
@@ -15,7 +16,7 @@ import mx.edu.itsur.pokebatalla.model.pokemons.Pokemon;
  * 
  * @author FJML1983
  */
-public class Movimiento {
+public class Movimiento implements Serializable{
 
     enum TiposDeMovimiento {
         //Primera Generación

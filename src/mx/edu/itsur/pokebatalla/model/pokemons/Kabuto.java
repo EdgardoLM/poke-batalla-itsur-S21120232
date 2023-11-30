@@ -13,7 +13,7 @@ import mx.edu.itsur.pokebatalla.model.moves.PoderPasado;
  *
  * @author Edgardo Lopez Mendez 
  */
-public class Kabuto extends Pokemon{
+public class Kabuto extends Pokemon {
  
  @Override
     public Enum[] getMovimientos() {

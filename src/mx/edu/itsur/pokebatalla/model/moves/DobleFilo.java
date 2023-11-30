@@ -4,11 +4,12 @@
  */
 package mx.edu.itsur.pokebatalla.model.moves;
 
+
 /**
  *
  * @author Edgardo Lopez Mendez 
  */
-public class DobleFilo extends MovimientoFisico{
+public class DobleFilo extends MovimientoFisico  {
 
     public DobleFilo() {
         this.tipo = TiposDeMovimiento.NORMAL;

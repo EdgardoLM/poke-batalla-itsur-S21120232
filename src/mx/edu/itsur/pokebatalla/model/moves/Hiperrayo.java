@@ -4,11 +4,12 @@
  */
 package mx.edu.itsur.pokebatalla.model.moves;
 
+
 /**
  *
  * @author LMC Alumno
  */
-public class Hiperrayo extends MovimientoEspecial{
+public class Hiperrayo extends MovimientoEspecial  {
 
     public Hiperrayo() {
         this.tipo = TiposDeMovimiento.NORMAL;

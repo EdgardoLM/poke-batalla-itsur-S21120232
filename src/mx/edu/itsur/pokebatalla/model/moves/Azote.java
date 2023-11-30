@@ -4,11 +4,12 @@
  */
 package mx.edu.itsur.pokebatalla.model.moves;
 
+
 /**
  *
  * @author Edgardo Lopez Mendez 
  */
-public class Azote extends MovimientoFisico{
+public class Azote extends MovimientoFisico {
     public Azote()
     {
        this.tipo = TiposDeMovimiento.NORMAL;

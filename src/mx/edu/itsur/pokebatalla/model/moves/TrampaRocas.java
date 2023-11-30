@@ -4,11 +4,12 @@
  */
 package mx.edu.itsur.pokebatalla.model.moves;
 
+
 /**
  *
  * @author Edgardo Lopez Mendez 
  */
-public class TrampaRocas extends MovimientoEstado{
+public class TrampaRocas extends MovimientoEstado {
 
     public TrampaRocas() {
           this.tipo = TiposDeMovimiento.ROCA;

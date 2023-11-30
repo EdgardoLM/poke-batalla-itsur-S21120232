@@ -4,6 +4,7 @@
  */
 package mx.edu.itsur.pokebatalla.model.pokemons;
 
+import java.io.Serializable;
 import java.util.List;
 import mx.edu.itsur.pokebatalla.model.moves.Movimiento;
 
@@ -11,7 +12,7 @@ import mx.edu.itsur.pokebatalla.model.moves.Movimiento;
  *
  * @author FJML1983
  */
-public abstract class Pokemon {
+public abstract class Pokemon implements Serializable{
 
     //Atributos
     protected String tipo;
@@ -23,6 +24,7 @@ public abstract class Pokemon {
     protected double precision;
     protected int xp; //https://www.wikidex.net/wiki/Experiencia_base
     
+
     Pokemon() {
     }
 
@@ -40,6 +42,12 @@ public abstract class Pokemon {
     public int getHp() {
         return hp;
     }       
+
+    public String getNombre() {
+        return nombre;
+    }
+    
+            
     
     //Setters
     public void setNombre(String nombre) {
@@ -62,5 +70,7 @@ public abstract class Pokemon {
         return this.getClass().getSimpleName() + 
                 "{tipo:" + tipo + " hp:" + hp + "}";
     }
+
+     
 
 }

@@ -4,6 +4,7 @@
  */
 package mx.edu.itsur.pokebatalla.model.moves;
 
+
 /**
  *
  * @author FJML1983

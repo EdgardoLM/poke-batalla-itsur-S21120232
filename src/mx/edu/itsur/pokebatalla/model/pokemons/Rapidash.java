@@ -5,6 +5,7 @@
 package mx.edu.itsur.pokebatalla.model.pokemons;
 
 ;
+
 import mx.edu.itsur.pokebatalla.model.moves.Bote;
 import mx.edu.itsur.pokebatalla.model.moves.Contoneo;
 import mx.edu.itsur.pokebatalla.model.moves.DobleFilo;
@@ -14,7 +15,7 @@ import mx.edu.itsur.pokebatalla.model.moves.Movimiento;
  *
  * @author Edgardo Lopez Mendez
  */
-public class Rapidash extends Pokemon{
+public class Rapidash extends Pokemon {
     
     @Override
     public Enum[] getMovimientos() {

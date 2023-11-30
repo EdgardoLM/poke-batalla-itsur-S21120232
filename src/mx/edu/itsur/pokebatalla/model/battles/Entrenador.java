@@ -24,7 +24,7 @@ public class Entrenador {
         pokemonsCapturados = new ArrayList<>();
     }
 
-    //3c Metodos
+    // Metodos
     public void capturarPokemon(Pokemon pk) {
         pokemonsCapturados.add(pk);
     }
@@ -32,7 +32,18 @@ public class Entrenador {
     //Instruir movimiento 
     public void instruirMovimientoAlPokemonActual(Pokemon oponente, int ordinalMovimiento)
     {
-        this.pokemonActual.atacar(oponente, ordinalMovimiento);
+       if(pokemonActual == null)
+        {
+            System.out.println("NO HAY UN POKEMON ACTUAL");
+            return;
+        }
+        
+        if(ordinalMovimiento < 0 || ordinalMovimiento >= pokemonActual.getMovimientos().length)
+        {
+            System.out.println("EL ORDINAL MOVIMIENTO NO ES VALIDO");
+            return;
+        }
+        this.pokemonActual.atacar(oponente, ordinalMovimiento);   
     }
 
     //Devuelve true cuando todos los Pokemon del entrenador tengan 0 HP

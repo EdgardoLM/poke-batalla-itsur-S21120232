@@ -4,11 +4,12 @@
  */
 package mx.edu.itsur.pokebatalla.model.moves;
 
+
 /**
  *
  * @author LMC Alumno
  */
-public class Contoneo extends MovimientoEstado{
+public class Contoneo extends MovimientoEstado {
     public Contoneo(){
     this.tipo = TiposDeMovimiento.NORMAL;
         this.potencia = 0;

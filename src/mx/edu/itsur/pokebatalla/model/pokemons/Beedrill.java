@@ -13,7 +13,7 @@ import mx.edu.itsur.pokebatalla.model.moves.OndaIgnea;
  *
  * @author Edgardo Lopez Menez 
  */
-public class Beedrill extends Pokemon{
+public class Beedrill extends Pokemon {
     
     @Override
     public Enum[] getMovimientos() {

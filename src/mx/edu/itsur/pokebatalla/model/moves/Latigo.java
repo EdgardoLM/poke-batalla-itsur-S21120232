@@ -4,11 +4,12 @@
  */
 package mx.edu.itsur.pokebatalla.model.moves;
 
+
 /**
  *
  * @author FJML1983
  */
-public class Latigo extends MovimientoEstado{
+public class Latigo extends MovimientoEstado  {
 
     public Latigo() {
         this.tipo = TiposDeMovimiento.NORMAL;

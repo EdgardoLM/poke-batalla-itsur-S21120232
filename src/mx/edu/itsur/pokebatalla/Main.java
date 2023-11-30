@@ -8,9 +8,9 @@ import mx.edu.itsur.pokebatalla.model.battles.Batalla;
 import mx.edu.itsur.pokebatalla.model.battles.Entrenador;
 import mx.edu.itsur.pokebatalla.model.pokemons.Beedrill;
 import mx.edu.itsur.pokebatalla.model.pokemons.Bullbasaur;
-import mx.edu.itsur.pokebatalla.model.pokemons.Pikachu;
 import mx.edu.itsur.pokebatalla.model.pokemons.Charmander;
 import mx.edu.itsur.pokebatalla.model.pokemons.Kabuto;
+import mx.edu.itsur.pokebatalla.model.pokemons.Pikachu;
 import mx.edu.itsur.pokebatalla.model.pokemons.Rapidash;
 import mx.edu.itsur.pokebatalla.utils.FileManager;
 
@@ -19,46 +19,45 @@ import mx.edu.itsur.pokebatalla.utils.FileManager;
  * @author Edgardo Lopez Mendez 
  */
 public class Main {
-
-    
+       
     public static void main(String[] args) {
-        
-        System.out.println("Hello PokeBatalla!");
-        
        
-        Kabuto Kabu = new Kabuto();
-        Beedrill bee = new Beedrill();
-        Rapidash rapi = new Rapidash();
-        
-        Entrenador ent1 = new Entrenador("Edgardo");
-        ent1.capturarPokemon(rapi);
-        ent1.capturarPokemon(bee);
+        System.out.println("++++++ HELLO POKEBATALLA +++++");
 
-        Entrenador ent2 = new Entrenador("Gute");
-        ent2.capturarPokemon(Kabu);
-        
-        Batalla battle = new Batalla(ent1, ent2);
-        battle.desarrollarBatalla();
-        
-        //Guardar hacia archivo
-        FileManager.guardarHaciaArchivo(battle);
-       
-        
-        
-        
-        Batalla b1 = FileManager.leerDesdeArchivo();
+        Pikachu pika = new Pikachu();
+        Beedrill bee = new Beedrill();
+        Kabuto kabu = new Kabuto();
+        Rapidash rapi = new Rapidash();
+        Charmander charm = new Charmander();
+        Bullbasaur bull = new Bullbasaur();
+                
+        Entrenador ent1 = new Entrenador("Edgardo");
+        ent1.capturarPokemon(bee);
+        ent1.capturarPokemon(kabu);
+        ent1.capturarPokemon(charm);
         
         
-      
-       
+        Entrenador ent2 = new Entrenador("Kylian");
+        ent2.capturarPokemon(pika);
+        ent2.capturarPokemon(rapi);
+        ent2.capturarPokemon(bull);
         
+        Batalla b = null;
         
-    }
+        Batalla batallaGuardada = FileManager.leerDesdeArchivo();
+        
+        if(batallaGuardada != null){
             
+            b = batallaGuardada;
+
+        } else {
+                    System.out.println("Pokebatalla itsur");
+            b = new Batalla(ent1, ent2);
+                   
+        }
         
-        
-        
-        
+        b.desarrollarBatalla();
+    }
 }
 
     

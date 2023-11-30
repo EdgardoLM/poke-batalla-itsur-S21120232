@@ -4,11 +4,12 @@
  */
 package mx.edu.itsur.pokebatalla.model.moves;
 
+
 /**
  *
  * @author Edgardo Lopez Mendez
  */
-public class OndaIgnea extends MovimientoEspecial{
+public class OndaIgnea extends MovimientoEspecial {
 
     public OndaIgnea() {
         this.tipo = TiposDeMovimiento.FUEGO;

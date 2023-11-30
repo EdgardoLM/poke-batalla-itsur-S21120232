@@ -4,11 +4,12 @@
  */
 package mx.edu.itsur.pokebatalla.model.moves;
 
+
 /**
  *
  * @author Edgardo Lopez Mendez 
  */
-public class Relevo extends MovimientoEstado{
+public class Relevo extends MovimientoEstado {
 
     public Relevo() {
         this.tipo = TiposDeMovimiento.NORMAL;

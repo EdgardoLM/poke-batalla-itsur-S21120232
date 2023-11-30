@@ -4,11 +4,12 @@
  */
 package mx.edu.itsur.pokebatalla.model.moves;
 
+
 /**
  *
  * @author Edgardo Lopez Mendez
  */
-public class Bote extends MovimientoFisico{
+public class Bote extends MovimientoFisico {
 
     public Bote() {
     this.tipo = TiposDeMovimiento.ROCA;

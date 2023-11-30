@@ -4,11 +4,12 @@
  */
 package mx.edu.itsur.pokebatalla.model.moves;
 
+
 /**
  *
  * @author Sonia
  */
-public class Grunido extends MovimientoEstado{
+public class Grunido extends MovimientoEstado  {
     
     public Grunido() {
         this.tipo = TiposDeMovimiento.NORMAL;

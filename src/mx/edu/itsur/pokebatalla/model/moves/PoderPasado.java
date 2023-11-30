@@ -4,11 +4,12 @@
  */
 package mx.edu.itsur.pokebatalla.model.moves;
 
+
 /**
  *
  * @author Edgardo Lopez Mendez
  */
-public class PoderPasado extends MovimientoEspecial{
+public class PoderPasado extends MovimientoEspecial {
 
     public PoderPasado() {
         this.tipo = TiposDeMovimiento.ROCA;

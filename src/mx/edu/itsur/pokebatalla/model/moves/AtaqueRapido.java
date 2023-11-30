@@ -12,7 +12,7 @@ import mx.edu.itsur.pokebatalla.model.moves.MovimientoFisico;
  *
  * @author FJML1983
  */
-public class AtaqueRapido extends MovimientoFisico{
+public class AtaqueRapido extends MovimientoFisico {
 
     public AtaqueRapido() {
         this.tipo=TiposDeMovimiento.NORMAL;
